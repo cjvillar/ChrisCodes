@@ -59,13 +59,11 @@
 </noscript><meta property="og:title" content="CS50x Week 2" />
 <meta property="og:description" content="Some fun with C and Python." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.cjvillarreal.com/ChrisCodes/posts/cs50_arrays/" />
-<meta property="og:image" content="https://www.cjvillarreal.com/ChrisCodes/%3Cimage%20path/url%3E" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.cjvillarreal.com/ChrisCodes/posts/cs50_arrays/" /><meta property="article:section" content="posts" />
 
 
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.cjvillarreal.com/ChrisCodes/%3Cimage%20path/url%3E" />
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CS50x Week 2"/>
 <meta name="twitter:description" content="Some fun with C and Python."/>
 
@@ -103,7 +101,7 @@
   "articleBody": "I just finished week 3 of the Harvard CS50x course and it’s getting interesting. Last week they introduced arrays. I finished the assignment to create a program in C that prompts the user for a message and then outputs the text in binary with dark and light emojis representing 0 and 1, respectively. It was fun to play around with and I wanted to translate my solution from C to python.\nThe CS50 course provides a C library, CS50, which includes some types that aren’t native to C, like string and get_string(). In my C code example below, I will omit the CS50 library so that it’s easier to compile and run without having to link the library’s binary file.\nthe output will look something like this:\n⚫🟡⚫⚫🟡⚫⚫⚫ ⚫🟡🟡⚫⚫🟡⚫🟡 ⚫🟡🟡🟡🟡⚫⚫🟡 Can you guess what it says?\n#include #include const int BITS_IN_BYTE = 8; int arr[8]; void print_bulb(int bit); int main(void) { printf(\"Message: \"); char message [400]; // get string of at max 400 characters scanf(\"%s\", message); //loop through each word int n = strlen(message); for (int i = 0; i \u003c n; i++) { int bits = 8; //loop through the ASCII number to convert to binary for (int j = 1; j \u003c= BITS_IN_BYTE; j ++) { int bit = message[i]; message[i] = bit % 2; arr[j] = message[i]; bit = bit / 2; message[i] = bit; bits = bits - 1; } //reverse loop through array for each binary for (int x = 8; x \u003e 0; x --) { print_bulb(arr[x]); } printf(\"\\n\"); } } void print_bulb(int bit) { if (bit == 0) { // Dark emoji printf(\"\\U000026AB\"); } else if (bit == 1) { // Light emoji printf(\"\\U0001F7E1\"); } } And now for my python example:\n\"\"\" Bulbs from cs50 adapted for python \"\"\" import math as m BITS_IN_BYTE = 8 message = input(\"Message:\") # loop through each character for i in message: char = ord(i) arr = [] # put each characters 8 bit conversion in list j = 1 while j \u003c= BITS_IN_BYTE: # calculate the 8 bits of a char bit = char char = bit % 2 bulb = m.trunc(char) # append emoji light if 1 or dark if 0 to arr if bulb == 0: arr.append(\"\\U000026AB\") elif bulb == 1: arr.append(\"\\U0001F7E1\") bit = bit / 2 char = bit j += 1 # print output of arr in reverse on single line # use reverese print because thats how the bits would be represented. print(*arr[::-1], sep=\"\") the message says ‘hey’\n",
   "wordCount" : "420",
   "inLanguage": "en",
-  "image":"https://www.cjvillarreal.com/ChrisCodes/%3Cimage%20path/url%3E","datePublished": "0001-01-01T00:00:00Z",
+  "datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
   "author":{
     "@type": "Person",

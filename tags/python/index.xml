@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://www.cjvillarreal.com/ChrisCodes/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>CS50x Week 2</title>
+      <title>C to Python</title>
       <link>https://www.cjvillarreal.com/ChrisCodes/posts/cs50_arrays/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.cjvillarreal.com/ChrisCodes/posts/cs50_arrays/</guid>
-      <description>Some fun with C and Python.</description>
+      <description>A lesson from CS50x in C and Python.</description>
     </item>
     
   </channel>

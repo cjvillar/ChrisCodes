@@ -5,12 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>CS50x | ChrisCodes</title>
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="canonical" href="https://www.cjvillarreal.com/ChrisCodes/tags/cs50x/">
+<title>ASSEMBLY FUN 💾 | ChrisCodes</title>
+<meta name="keywords" content="assembly">
+<meta name="description" content="Assembly is fun and cool.">
+<meta name="author" content="Chris">
+<link rel="canonical" href="https://canonical.url/to/page">
 <link crossorigin="anonymous" href="/ChrisCodes/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css" integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/ChrisCodes/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://www.cjvillarreal.com/ChrisCodes/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.cjvillarreal.com/ChrisCodes/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.cjvillarreal.com/ChrisCodes/favicon-32x32.png">
@@ -18,7 +20,6 @@
 <link rel="mask-icon" href="https://www.cjvillarreal.com/ChrisCodes/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://www.cjvillarreal.com/ChrisCodes/tags/cs50x/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -55,18 +56,76 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="CS50x" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.cjvillarreal.com/ChrisCodes/tags/cs50x/" />
+</noscript><meta property="og:title" content="ASSEMBLY FUN 💾" />
+<meta property="og:description" content="Assembly is fun and cool." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.cjvillarreal.com/ChrisCodes/posts/assembly_fun/" />
+<meta property="og:image" content="https://www.cjvillarreal.com/ChrisCodes/images/assembler_post.jpg" /><meta property="article:section" content="posts" />
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="CS50x"/>
-<meta name="twitter:description" content=""/>
 
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.cjvillarreal.com/ChrisCodes/images/assembler_post.jpg" />
+<meta name="twitter:title" content="ASSEMBLY FUN 💾"/>
+<meta name="twitter:description" content="Assembly is fun and cool."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://www.cjvillarreal.com/ChrisCodes/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "ASSEMBLY FUN 💾",
+      "item": "https://www.cjvillarreal.com/ChrisCodes/posts/assembly_fun/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "ASSEMBLY FUN 💾",
+  "name": "ASSEMBLY FUN 💾",
+  "description": "Assembly is fun and cool.",
+  "keywords": [
+    "assembly"
+  ],
+  "articleBody": "After spending some time programming in C I wanted to explore the world of assembly. Naturally, I went to YouTube and searched for assembly code. I found some excellent resources like, Fireship’s Assembly Language in 100 Seconds.\nI decided to install Netwide Assembler (NASM), an assembler for the x86 CPU architecture, and I’m on a mac with an intel chip. To install I used HomeBrew brew install nasm\nBelow is the code for hello world. If interested check out my GitHub repo: assembly_fun with more details on how to get it run.\nglobal _main ;entry point for linker section .text ;text contains logic for program _main: mov rax, 0x02000004 ;system call for write mov rdi, 1 ;file handle 1 is stdout mov rsi, message ;address of string to output mov rdx, 13 ;length or number of bytes syscall ;call kernel to do the write mov rax, 0x02000001 ;system call for exit xor rdi, rdi ;exit code 0 syscall ;call kernel to exit section .data ;constants message: db \"Hello, World\", 10 More resourses: NSM Tutorial\n",
+  "wordCount" : "174",
+  "inLanguage": "en",
+  "image":"https://www.cjvillarreal.com/ChrisCodes/images/assembler_post.jpg","datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Chris"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.cjvillarreal.com/ChrisCodes/posts/assembly_fun/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ChrisCodes",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.cjvillarreal.com/ChrisCodes/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -125,26 +184,64 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header">
-  <h1>
-    CS50x
-  </h1>
-</header>
+<main class="main">
 
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.cjvillarreal.com/ChrisCodes/images/c_to_python.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2>C to Python
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Harvard CS50x course is really interesting. One assignment is to create a program in C that prompts the user for a message and then outputs the text in binary with dark and light emojis representing 0 and 1, respectively. It’s fun to play around and create different “messages”. I wanted to translate my solution code from C to python, so thats what I did here.
-The CS50 course provides a C library, CS50, which includes some types that aren’t native to C, like string and get_string()....</p>
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://www.cjvillarreal.com/ChrisCodes">Home</a>&nbsp;»&nbsp;<a href="https://www.cjvillarreal.com/ChrisCodes/posts/">Posts</a></div>
+    <h1 class="post-title">
+      ASSEMBLY FUN 💾
+    </h1>
+    <div class="post-description">
+      Assembly is fun and cool.
+    </div>
+    <div class="post-meta">1 min&nbsp;·&nbsp;174 words&nbsp;·&nbsp;Chris
+
+</div>
+  </header> 
+
+  <div class="post-content"><p>After spending some time programming in C I wanted to explore the world of assembly. Naturally, I went to YouTube and searched for assembly code. I found some excellent resources like,
+<a href="https://youtu.be/4gwYkEK0gOk">Fireship</a>’s Assembly Language in 100 Seconds.</p>
+<p>I decided to install Netwide Assembler (NASM), an assembler for the x86 CPU architecture, and I&rsquo;m on a mac with an intel chip. To install I used HomeBrew <code>brew install nasm</code></p>
+<p>Below is the code for hello world. If interested check out my GitHub repo: <a href="https://github.com/cjvillar/assembly_fun/blob/main/README.md">assembly_fun</a> with more details on how to get it run.</p>
+<pre tabindex="0"><code class="language-assembly" data-lang="assembly">global    _main               ;entry point for linker
+    section   .text           ;text contains logic for program
+_main:                          
+    mov       rax, 0x02000004 ;system call for write
+    mov       rdi, 1          ;file handle 1 is stdout
+    mov       rsi, message    ;address of string to output
+    mov       rdx, 13         ;length or number of bytes
+    syscall                   ;call kernel to do the write
+    mov       rax, 0x02000001 ;system call for exit
+    xor       rdi, rdi        ;exit code 0
+    syscall                   ;call kernel to exit
+    section   .data           ;constants
+message:  
+    db        &#34;Hello, World&#34;, 10 
+</code></pre><p>More resourses:
+<a href="https://cs.lmu.edu/~ray/notes/nasmtutorial/">NSM Tutorial</a></p>
+
+
   </div>
-  <footer class="entry-footer">2 min&nbsp;·&nbsp;419 words&nbsp;·&nbsp;Chris</footer>
-  <a class="entry-link" aria-label="post link to C to Python" href="https://www.cjvillarreal.com/ChrisCodes/posts/cs50_arrays/"></a>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://www.cjvillarreal.com/ChrisCodes/tags/assembly/">assembly</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://www.cjvillarreal.com/ChrisCodes/posts/ai_art/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>AI Generated Art</span>
+  </a>
+  <a class="next" href="https://www.cjvillarreal.com/ChrisCodes/posts/cs50_arrays/">
+    <span class="title">Next »</span>
+    <br>
+    <span>C to Python</span>
+  </a>
+</nav>
+
+  </footer>
 </article>
     </main>
     

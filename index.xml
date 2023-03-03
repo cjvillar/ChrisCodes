@@ -16,12 +16,21 @@
     </item>
     
     <item>
-      <title>CS50x Week 2</title>
+      <title>ASSEMBLY FUN 💾</title>
+      <link>https://www.cjvillarreal.com/ChrisCodes/posts/assembly_fun/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cjvillarreal.com/ChrisCodes/posts/assembly_fun/</guid>
+      <description>Assembly is fun and cool.</description>
+    </item>
+    
+    <item>
+      <title>C to Python</title>
       <link>https://www.cjvillarreal.com/ChrisCodes/posts/cs50_arrays/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.cjvillarreal.com/ChrisCodes/posts/cs50_arrays/</guid>
-      <description>Some fun with C and Python.</description>
+      <description>A lesson from CS50x in C and Python.</description>
     </item>
     
     <item>

@@ -100,8 +100,8 @@
   "keywords": [
     "assembly"
   ],
-  "articleBody": "After spending some time programming in C I wanted to explore the world of assembly. Naturally, I went to YouTube and searched for assembly code. I found some excellent resources like, Fireship’s Assembly Language in 100 Seconds.\nI decided to install Netwide Assembler (NASM), an assembler for the x86 CPU architecture, and I’m on a mac with an intel chip. To install I used HomeBrew brew install nasm\nBelow is the code for hello world. If interested check out my GitHub repo: assembly_fun with more details on how to get it run.\nglobal _main ;entry point for linker section .text ;text contains logic for program _main: mov rax, 0x02000004 ;system call for write mov rdi, 1 ;file handle 1 is stdout mov rsi, message ;address of string to output mov rdx, 13 ;length or number of bytes syscall ;call kernel to do the write mov rax, 0x02000001 ;system call for exit xor rdi, rdi ;exit code 0 syscall ;call kernel to exit section .data ;constants message: db \"Hello, World\", 10 More resourses: NSM Tutorial\n",
-  "wordCount" : "174",
+  "articleBody": "After spending some time programming in C I wanted to explore the world of assembly. Naturally, I went to YouTube and searched for assembly code. I found some excellent resources like, Fireship’s Assembly Language in 100 Seconds.\nI decided to install Netwide Assembler (NASM), an assembler for the x86 CPU architecture. I’m on a mac with an intel chip. To install the assembler I used HomeBrew:\nbrew install nasm\nBelow is the code for hello world. If interested check out my GitHub repo: assembly_fun with more details on how to get it run.\nglobal _main ;entry point for linker section .text ;text contains logic for program _main: mov rax, 0x02000004 ;system call for write mov rdi, 1 ;file handle 1 is stdout mov rsi, message ;address of string to output mov rdx, 13 ;length or number of bytes syscall ;call kernel to do the write mov rax, 0x02000001 ;system call for exit xor rdi, rdi ;exit code 0 syscall ;call kernel to exit section .data ;constants message: db \"Hello, World\", 10 More resources: NSM Tutorial\n",
+  "wordCount" : "175",
   "inLanguage": "en",
   "image":"https://www.cjvillarreal.com/ChrisCodes/images/assembler_post.jpg","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
@@ -195,14 +195,15 @@
     <div class="post-description">
       Assembly is fun and cool.
     </div>
-    <div class="post-meta">1 min&nbsp;·&nbsp;174 words&nbsp;·&nbsp;Chris
+    <div class="post-meta">1 min&nbsp;·&nbsp;175 words&nbsp;·&nbsp;Chris
 
 </div>
   </header> 
 
   <div class="post-content"><p>After spending some time programming in C I wanted to explore the world of assembly. Naturally, I went to YouTube and searched for assembly code. I found some excellent resources like,
 <a href="https://youtu.be/4gwYkEK0gOk">Fireship</a>’s Assembly Language in 100 Seconds.</p>
-<p>I decided to install Netwide Assembler (NASM), an assembler for the x86 CPU architecture, and I&rsquo;m on a mac with an intel chip. To install I used HomeBrew <code>brew install nasm</code></p>
+<p>I decided to install Netwide Assembler (NASM), an assembler for the x86 CPU architecture. I&rsquo;m on a mac with an intel chip. To install the assembler I used HomeBrew:</p>
+<p><code>brew install nasm</code></p>
 <p>Below is the code for hello world. If interested check out my GitHub repo: <a href="https://github.com/cjvillar/assembly_fun/blob/main/README.md">assembly_fun</a> with more details on how to get it run.</p>
 <pre tabindex="0"><code class="language-assembly" data-lang="assembly">global    _main               ;entry point for linker
     section   .text           ;text contains logic for program
@@ -218,7 +219,7 @@ _main:
     section   .data           ;constants
 message:  
     db        &#34;Hello, World&#34;, 10 
-</code></pre><p>More resourses:
+</code></pre><p>More resources:
 <a href="https://cs.lmu.edu/~ray/notes/nasmtutorial/">NSM Tutorial</a></p>
 
 

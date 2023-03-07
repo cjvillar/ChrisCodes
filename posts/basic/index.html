@@ -5,9 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>ASSEMBLY FUN 💾 | ChrisCodes</title>
-<meta name="keywords" content="assembly">
-<meta name="description" content="Assembly is fun and cool.">
+<title>Let’s try something BASIC. | ChrisCodes</title>
+<meta name="keywords" content="BASIC, APPLE">
+<meta name="description" content="Coding with Javascript-emulated Applesoft BASIC.">
 <meta name="author" content="Chris">
 <link rel="canonical" href="https://canonical.url/to/page">
 <link crossorigin="anonymous" href="/ChrisCodes/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
@@ -54,18 +54,18 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="ASSEMBLY FUN 💾" />
-<meta property="og:description" content="Assembly is fun and cool." />
+</noscript><meta property="og:title" content="Let’s try something BASIC." />
+<meta property="og:description" content="Coding with Javascript-emulated Applesoft BASIC." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.cjvillarreal.com/ChrisCodes/posts/assembly_fun/" />
-<meta property="og:image" content="https://www.cjvillarreal.com/ChrisCodes/images/assembler_post.jpg" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.cjvillarreal.com/ChrisCodes/posts/basic/" />
+<meta property="og:image" content="https://www.cjvillarreal.com/ChrisCodes/images/basiccover.jpg" /><meta property="article:section" content="posts" />
 
 
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.cjvillarreal.com/ChrisCodes/images/assembler_post.jpg" />
-<meta name="twitter:title" content="ASSEMBLY FUN 💾"/>
-<meta name="twitter:description" content="Assembly is fun and cool."/>
+<meta name="twitter:image" content="https://www.cjvillarreal.com/ChrisCodes/images/basiccover.jpg" />
+<meta name="twitter:title" content="Let’s try something BASIC."/>
+<meta name="twitter:description" content="Coding with Javascript-emulated Applesoft BASIC."/>
 
 
 <script type="application/ld+json">
@@ -82,8 +82,8 @@
     {
       "@type": "ListItem",
       "position":  3 ,
-      "name": "ASSEMBLY FUN 💾",
-      "item": "https://www.cjvillarreal.com/ChrisCodes/posts/assembly_fun/"
+      "name": "Let’s try something BASIC.",
+      "item": "https://www.cjvillarreal.com/ChrisCodes/posts/basic/"
     }
   ]
 }
@@ -92,16 +92,16 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "ASSEMBLY FUN 💾",
-  "name": "ASSEMBLY FUN 💾",
-  "description": "Assembly is fun and cool.",
+  "headline": "Let’s try something BASIC.",
+  "name": "Let’s try something BASIC.",
+  "description": "Coding with Javascript-emulated Applesoft BASIC.",
   "keywords": [
-    "assembly"
+    "BASIC", "APPLE"
   ],
-  "articleBody": "After spending some time programming in C I wanted to explore the world of assembly. Naturally, I went to YouTube and searched for assembly code. I found some excellent resources like, Fireship’s Assembly Language in 100 Seconds.\nI decided to install Netwide Assembler (NASM), an assembler for the x86 CPU architecture. I’m on a mac with an intel chip. To install the assembler I used HomeBrew:\nbrew install nasm\nBelow is the code for hello world. If interested check out my GitHub repo: assembly_fun with more details on how to get it run.\nglobal _main ;entry point for linker section .text ;text contains logic for program _main: mov rax, 0x02000004 ;system call for write mov rdi, 1 ;file handle 1 is stdout mov rsi, message ;address of string to output mov rdx, 13 ;length or number of bytes syscall ;call kernel to do the write mov rax, 0x02000001 ;system call for exit xor rdi, rdi ;exit code 0 syscall ;call kernel to exit section .data ;constants message: db \"Hello, World\", 10 More resources: NSM Tutorial\n",
-  "wordCount" : "175",
+  "articleBody": "A few years ago I had the pleasure of going to Cambridge, England for work. While enjoying some free time, a bunch of colleagues and I went to the The Centre for Computing History. Aside from learning about the history of tech from knowledgeable staff, I really enjoyed playing with the old computers. Below is an Apple II. I think it’s clear I had no idea what I was doing.\nRecently, I decided to search for some emulators of older systems to try older computer languages such as BASIC (Beginners’ All-purpose Symbolic Instruction Code). That’s when I found: jsbasic, a javascript BASIC emulator.\nAbove is a book on the BASIC programming language that was available to use with open computers at the museum. Using the jsbasic emulator let’s see what the code on the cover does!\n10 FOR I=1 TO 10 20 PRINT TAB (30); 30 FOR J=1 TO I 40 PRINT \"*\"; 50 NEXT J 60 PRINT 70 NEXT I 80 END I think that’s pretty rad!\n",
+  "wordCount" : "168",
   "inLanguage": "en",
-  "image":"https://www.cjvillarreal.com/ChrisCodes/images/assembler_post.jpg","datePublished": "0001-01-01T00:00:00Z",
+  "image":"https://www.cjvillarreal.com/ChrisCodes/images/basiccover.jpg","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
   "author":{
     "@type": "Person",
@@ -109,7 +109,7 @@
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.cjvillarreal.com/ChrisCodes/posts/assembly_fun/"
+    "@id": "https://www.cjvillarreal.com/ChrisCodes/posts/basic/"
   },
   "publisher": {
     "@type": "Organization",
@@ -188,55 +188,54 @@
   <header class="post-header">
     <div class="breadcrumbs"><a href="https://www.cjvillarreal.com/ChrisCodes">Home</a>&nbsp;»&nbsp;<a href="https://www.cjvillarreal.com/ChrisCodes/posts/">Posts</a></div>
     <h1 class="post-title">
-      ASSEMBLY FUN 💾
+      Let’s try something BASIC.
     </h1>
     <div class="post-description">
-      Assembly is fun and cool.
+      Coding with Javascript-emulated Applesoft BASIC.
     </div>
-    <div class="post-meta">1 min&nbsp;·&nbsp;175 words&nbsp;·&nbsp;Chris
+    <div class="post-meta">1 min&nbsp;·&nbsp;168 words&nbsp;·&nbsp;Chris
 
 </div>
   </header> 
 
-  <div class="post-content"><p>After spending some time programming in C I wanted to explore the world of assembly. Naturally, I went to YouTube and searched for assembly code. I found some excellent resources like,
-<a href="https://youtu.be/4gwYkEK0gOk">Fireship</a>’s Assembly Language in 100 Seconds.</p>
-<p>I decided to install Netwide Assembler (NASM), an assembler for the x86 CPU architecture. I&rsquo;m on a mac with an intel chip. To install the assembler I used HomeBrew:</p>
-<p><code>brew install nasm</code></p>
-<p>Below is the code for hello world. If interested check out my GitHub repo: <a href="https://github.com/cjvillar/assembly_fun/blob/main/README.md">assembly_fun</a> with more details on how to get it run.</p>
-<pre tabindex="0"><code class="language-assembly" data-lang="assembly">global    _main               ;entry point for linker
-    section   .text           ;text contains logic for program
-_main:                          
-    mov       rax, 0x02000004 ;system call for write
-    mov       rdi, 1          ;file handle 1 is stdout
-    mov       rsi, message    ;address of string to output
-    mov       rdx, 13         ;length or number of bytes
-    syscall                   ;call kernel to do the write
-    mov       rax, 0x02000001 ;system call for exit
-    xor       rdi, rdi        ;exit code 0
-    syscall                   ;call kernel to exit
-    section   .data           ;constants
-message:  
-    db        &#34;Hello, World&#34;, 10 
-</code></pre><p>More resources:
-<a href="https://cs.lmu.edu/~ray/notes/nasmtutorial/">NSM Tutorial</a></p>
+  <div class="post-content"><p>A few years ago I had the pleasure of going to Cambridge, England for work. While enjoying some free time,  a bunch of colleagues and I went to the <a href="http://www.computinghistory.org.uk/">The Centre for Computing History</a>. Aside from learning about the history of tech from knowledgeable staff, I really enjoyed playing with the old computers.
+Below is an Apple II. I think it&rsquo;s clear I had no idea what I was doing.</p>
+<p><img loading="lazy" src="../../images/appleii.jpg" alt="Apple II"  />
+</p>
+<p>Recently, I decided to search for some emulators of older systems to try older computer languages such as BASIC (Beginners&rsquo; All-purpose Symbolic Instruction Code). That’s when I found: <a href="https://www.calormen.com/jsbasic/">jsbasic</a>,   a javascript BASIC emulator.</p>
+<p><img loading="lazy" src="../../images/basic_book.jpg" alt="BASIC programing book"  />
+</p>
+<p>Above is a book on the BASIC programming language that was available to use with open computers at the museum. Using the jsbasic emulator let’s see what the code on the cover does!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-basic" data-lang="basic"><span class="line"><span class="cl"><span class="nl">10</span><span class="w"> </span><span class="kr">FOR</span><span class="w"> </span><span class="vg">I</span><span class="o">=</span><span class="il">1</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="il">10</span>
+</span></span><span class="line"><span class="cl"><span class="nl">20</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="kr">TAB</span><span class="w"> </span><span class="p">(</span><span class="il">30</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nl">30</span><span class="w"> </span><span class="kr">FOR</span><span class="w"> </span><span class="vg">J</span><span class="o">=</span><span class="il">1</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="vg">I</span>
+</span></span><span class="line"><span class="cl"><span class="nl">40</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">&#34;*&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nl">50</span><span class="w"> </span><span class="kr">NEXT</span><span class="w"> </span><span class="vg">J</span>
+</span></span><span class="line"><span class="cl"><span class="nl">60</span><span class="w"> </span><span class="kr">PRINT</span>
+</span></span><span class="line"><span class="cl"><span class="nl">70</span><span class="w"> </span><span class="kr">NEXT</span><span class="w"> </span><span class="vg">I</span>
+</span></span><span class="line"><span class="cl"><span class="nl">80</span><span class="w"> </span><span class="kr">END</span>
+</span></span></code></pre></div><p><img loading="lazy" src="../../images/basic_output.png" alt="OUTPUT"  />
+</p>
+<p>I think that&rsquo;s pretty rad!</p>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://www.cjvillarreal.com/ChrisCodes/tags/assembly/">assembly</a></li>
+      <li><a href="https://www.cjvillarreal.com/ChrisCodes/tags/basic/">BASIC</a></li>
+      <li><a href="https://www.cjvillarreal.com/ChrisCodes/tags/apple/">APPLE</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://www.cjvillarreal.com/ChrisCodes/posts/basic/">
+  <a class="prev" href="https://www.cjvillarreal.com/ChrisCodes/posts/ai_art/">
     <span class="title">« Prev</span>
     <br>
-    <span>Let’s try something BASIC.</span>
+    <span>AI Generated Art</span>
   </a>
-  <a class="next" href="https://www.cjvillarreal.com/ChrisCodes/posts/cs50_arrays/">
+  <a class="next" href="https://www.cjvillarreal.com/ChrisCodes/posts/assembly_fun/">
     <span class="title">Next »</span>
     <br>
-    <span>C to Python</span>
+    <span>ASSEMBLY FUN 💾</span>
   </a>
 </nav>
 

@@ -11,11 +11,12 @@
 <meta name="author" content="Chris">
 <link rel="canonical" href="https://canonical.url/to/page">
 <link crossorigin="anonymous" href="/ChrisCodes/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/ChrisCodes/assets/js/highlight.js" onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://www.cjvillarreal.com/ChrisCodes/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://www.cjvillarreal.com/ChrisCodes/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://www.cjvillarreal.com/ChrisCodes/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://www.cjvillarreal.com/ChrisCodes/apple-touch-icon.png">
-<link rel="mask-icon" href="https://www.cjvillarreal.com/ChrisCodes/safari-pinned-tab.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.cjvillarreal.com/ChrisCodes/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.cjvillarreal.com/ChrisCodes/favicon.ico">
+<link rel="apple-touch-icon" href="https://www.cjvillarreal.com/ChrisCodes/favicon.ico">
+<link rel="mask-icon" href="https://www.cjvillarreal.com/ChrisCodes/favicon.ico">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <noscript>
@@ -206,15 +207,15 @@ Below is an Apple II. I think it&rsquo;s clear I had no idea what I was doing.</
 <p><img loading="lazy" src="../../images/basic_book.jpg" alt="BASIC programing book"  />
 </p>
 <p>Above is a book on the BASIC programming language that was available to use with open computers at the museum. Using the jsbasic emulator let’s see what the code on the cover does!</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-basic" data-lang="basic"><span class="line"><span class="cl"><span class="nl">10</span><span class="w"> </span><span class="kr">FOR</span><span class="w"> </span><span class="vg">I</span><span class="o">=</span><span class="il">1</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="il">10</span>
-</span></span><span class="line"><span class="cl"><span class="nl">20</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="kr">TAB</span><span class="w"> </span><span class="p">(</span><span class="il">30</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nl">30</span><span class="w"> </span><span class="kr">FOR</span><span class="w"> </span><span class="vg">J</span><span class="o">=</span><span class="il">1</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="vg">I</span>
-</span></span><span class="line"><span class="cl"><span class="nl">40</span><span class="w"> </span><span class="kr">PRINT</span><span class="w"> </span><span class="s2">&#34;*&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nl">50</span><span class="w"> </span><span class="kr">NEXT</span><span class="w"> </span><span class="vg">J</span>
-</span></span><span class="line"><span class="cl"><span class="nl">60</span><span class="w"> </span><span class="kr">PRINT</span>
-</span></span><span class="line"><span class="cl"><span class="nl">70</span><span class="w"> </span><span class="kr">NEXT</span><span class="w"> </span><span class="vg">I</span>
-</span></span><span class="line"><span class="cl"><span class="nl">80</span><span class="w"> </span><span class="kr">END</span>
-</span></span></code></pre></div><p><img loading="lazy" src="../../images/basic_output.png" alt="OUTPUT"  />
+<pre tabindex="0"><code>10 FOR I=1 TO 10
+20 PRINT TAB (30);
+30 FOR J=1 TO I
+40 PRINT &#34;*&#34;;
+50 NEXT J
+60 PRINT
+70 NEXT I
+80 END
+</code></pre><p><img loading="lazy" src="../../images/basic_output.png" alt="OUTPUT"  />
 </p>
 <p>I think that&rsquo;s pretty rad!</p>
 
@@ -232,10 +233,10 @@ Below is an Apple II. I think it&rsquo;s clear I had no idea what I was doing.</
     <br>
     <span>AI Generated Art</span>
   </a>
-  <a class="next" href="https://www.cjvillarreal.com/ChrisCodes/posts/assembly_fun/">
+  <a class="next" href="https://www.cjvillarreal.com/ChrisCodes/posts/cs50_arrays/">
     <span class="title">Next »</span>
     <br>
-    <span>ASSEMBLY FUN 💾</span>
+    <span>C to Python</span>
   </a>
 </nav>
 

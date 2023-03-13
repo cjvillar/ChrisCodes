@@ -25,6 +25,15 @@
     </item>
     
     <item>
+      <title>C to Python</title>
+      <link>https://www.cjvillarreal.com/ChrisCodes/posts/cs50_arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cjvillarreal.com/ChrisCodes/posts/cs50_arrays/</guid>
+      <description>A lesson from CS50x in C and Python.</description>
+    </item>
+    
+    <item>
       <title>ASSEMBLY FUN 💾</title>
       <link>https://www.cjvillarreal.com/ChrisCodes/posts/assembly_fun/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -34,12 +43,12 @@
     </item>
     
     <item>
-      <title>C to Python</title>
-      <link>https://www.cjvillarreal.com/ChrisCodes/posts/cs50_arrays/</link>
+      <title>Not to bash on Bash.</title>
+      <link>https://www.cjvillarreal.com/ChrisCodes/posts/bash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cjvillarreal.com/ChrisCodes/posts/cs50_arrays/</guid>
-      <description>A lesson from CS50x in C and Python.</description>
+      <guid>https://www.cjvillarreal.com/ChrisCodes/posts/bash/</guid>
+      <description>Just because you can doesn&amp;#39;t mean you should.</description>
     </item>
     
     <item>

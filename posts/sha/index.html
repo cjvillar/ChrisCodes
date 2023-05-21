@@ -333,11 +333,11 @@
       const enteredPasswordHash = CryptoJS.SHA256(enteredPassword).toString();
   
       if (enteredPasswordHash === correctPasswordHash) {
-        alert('Password is correct! Access granted.');
+        alert('✅ Password is correct! Access granted.');
       } else if (correctPasswordHash === null) {
-        alert('Please Generate a hash.');
+        alert('🛂 Please Generate a hash.');
       } else {
-        alert('Incorrect password. Access denied.');
+        alert('❌ Incorrect password. Access denied.');
       } 
       
   

@@ -19,6 +19,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://www.cjvillarreal.com/ChrisCodes/posts/index.xml">
+<link rel="alternate" hreflang="en" href="https://www.cjvillarreal.com/ChrisCodes/posts/">
 <noscript>
     <style>
         #theme-toggle,
@@ -36,7 +37,7 @@
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -55,7 +56,10 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="Posts" />
+</noscript>
+  
+
+<meta property="og:title" content="Posts" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.cjvillarreal.com/ChrisCodes/posts/" />
@@ -69,10 +73,10 @@
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://www.cjvillarreal.com/ChrisCodes/posts/"
     }
@@ -96,7 +100,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.cjvillarreal.com/ChrisCodes" accesskey="h" title="ChrisCodes (Alt + H)">ChrisCodes</a>
+            <a href="https://www.cjvillarreal.com/ChrisCodes/" accesskey="h" title="ChrisCodes (Alt + H)">ChrisCodes</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -148,10 +152,8 @@
 </header>
 
 <article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.cjvillarreal.com/ChrisCodes/images/assembler_post.jpg" alt="">
-</figure>
   <header class="entry-header">
-    <h2>ASSEMBLY FUN 💾
+    <h2 class="entry-hint-parent">ASSEMBLY FUN 💾
     </h2>
   </header>
   <div class="entry-content">
@@ -165,10 +167,8 @@ Below is the code for hello world....</p>
 </article>
 
 <article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.cjvillarreal.com/ChrisCodes/images/bash_post.jpg" alt="">
-</figure>
   <header class="entry-header">
-    <h2>Not to bash on Bash.
+    <h2 class="entry-hint-parent">Not to bash on Bash.
     </h2>
   </header>
   <div class="entry-content">
@@ -182,7 +182,7 @@ for((i=1;i&lt;=1000; i&#43;&#43;)); do echo &#34;data_point_$i&#34; &gt;&gt; dat
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>My first Post
+    <h2 class="entry-hint-parent">My first Post
     </h2>
   </header>
   <div class="entry-content">
@@ -202,7 +202,8 @@ print(&#39;hello world!&#39;) </p>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://www.cjvillarreal.com/ChrisCodes">ChrisCodes</a></span>
+        <span>&copy; 2024 <a href="https://www.cjvillarreal.com/ChrisCodes/">ChrisCodes</a></span> · 
+
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

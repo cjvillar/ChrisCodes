@@ -2,86 +2,86 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on ChrisCodes</title>
-    <link>https://www.cjvillarreal.com/ChrisCodes/tags/</link>
+    <link>http://localhost:1313/ChrisCodes/tags/</link>
     <description>Recent content in Tags on ChrisCodes</description>
     <generator>Hugo -- 0.128.2</generator>
     <language>en-us</language>
-    <atom:link href="https://www.cjvillarreal.com/ChrisCodes/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/ChrisCodes/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>APPLE</title>
-      <link>https://www.cjvillarreal.com/ChrisCodes/tags/apple/</link>
+      <link>http://localhost:1313/ChrisCodes/tags/apple/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.cjvillarreal.com/ChrisCodes/tags/apple/</guid>
+      <guid>http://localhost:1313/ChrisCodes/tags/apple/</guid>
       <description></description>
     </item>
     <item>
       <title>Arrays</title>
-      <link>https://www.cjvillarreal.com/ChrisCodes/tags/arrays/</link>
+      <link>http://localhost:1313/ChrisCodes/tags/arrays/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.cjvillarreal.com/ChrisCodes/tags/arrays/</guid>
+      <guid>http://localhost:1313/ChrisCodes/tags/arrays/</guid>
       <description></description>
     </item>
     <item>
       <title>Assembly</title>
-      <link>https://www.cjvillarreal.com/ChrisCodes/tags/assembly/</link>
+      <link>http://localhost:1313/ChrisCodes/tags/assembly/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.cjvillarreal.com/ChrisCodes/tags/assembly/</guid>
+      <guid>http://localhost:1313/ChrisCodes/tags/assembly/</guid>
       <description></description>
     </item>
     <item>
       <title>Bash</title>
-      <link>https://www.cjvillarreal.com/ChrisCodes/tags/bash/</link>
+      <link>http://localhost:1313/ChrisCodes/tags/bash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.cjvillarreal.com/ChrisCodes/tags/bash/</guid>
+      <guid>http://localhost:1313/ChrisCodes/tags/bash/</guid>
       <description></description>
     </item>
     <item>
       <title>BASIC</title>
-      <link>https://www.cjvillarreal.com/ChrisCodes/tags/basic/</link>
+      <link>http://localhost:1313/ChrisCodes/tags/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.cjvillarreal.com/ChrisCodes/tags/basic/</guid>
+      <guid>http://localhost:1313/ChrisCodes/tags/basic/</guid>
       <description></description>
     </item>
     <item>
       <title>C</title>
-      <link>https://www.cjvillarreal.com/ChrisCodes/tags/c/</link>
+      <link>http://localhost:1313/ChrisCodes/tags/c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.cjvillarreal.com/ChrisCodes/tags/c/</guid>
+      <guid>http://localhost:1313/ChrisCodes/tags/c/</guid>
       <description></description>
     </item>
     <item>
       <title>CS</title>
-      <link>https://www.cjvillarreal.com/ChrisCodes/tags/cs/</link>
+      <link>http://localhost:1313/ChrisCodes/tags/cs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.cjvillarreal.com/ChrisCodes/tags/cs/</guid>
+      <guid>http://localhost:1313/ChrisCodes/tags/cs/</guid>
       <description></description>
     </item>
     <item>
       <title>CS50</title>
-      <link>https://www.cjvillarreal.com/ChrisCodes/tags/cs50/</link>
+      <link>http://localhost:1313/ChrisCodes/tags/cs50/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.cjvillarreal.com/ChrisCodes/tags/cs50/</guid>
+      <guid>http://localhost:1313/ChrisCodes/tags/cs50/</guid>
       <description></description>
     </item>
     <item>
       <title>CS50x</title>
-      <link>https://www.cjvillarreal.com/ChrisCodes/tags/cs50x/</link>
+      <link>http://localhost:1313/ChrisCodes/tags/cs50x/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.cjvillarreal.com/ChrisCodes/tags/cs50x/</guid>
+      <guid>http://localhost:1313/ChrisCodes/tags/cs50x/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>https://www.cjvillarreal.com/ChrisCodes/tags/python/</link>
+      <link>http://localhost:1313/ChrisCodes/tags/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.cjvillarreal.com/ChrisCodes/tags/python/</guid>
+      <guid>http://localhost:1313/ChrisCodes/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Terminal</title>
-      <link>https://www.cjvillarreal.com/ChrisCodes/tags/terminal/</link>
+      <link>http://localhost:1313/ChrisCodes/tags/terminal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.cjvillarreal.com/ChrisCodes/tags/terminal/</guid>
+      <guid>http://localhost:1313/ChrisCodes/tags/terminal/</guid>
       <description></description>
     </item>
   </channel>

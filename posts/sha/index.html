@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/ChrisCodes/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=ChrisCodes/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>SHA, Secure Hash Algorithm 🔒 | ChrisCodes</title>
 <meta name="keywords" content="">
 <meta name="description" content="SHA, Secure Hash Algorithm">
 <meta name="author" content="Chris">
 <link rel="canonical" href="https://canonical.url/to/page">
 <link crossorigin="anonymous" href="/ChrisCodes/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://www.cjvillarreal.com/ChrisCodes/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://www.cjvillarreal.com/ChrisCodes/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="https://www.cjvillarreal.com/ChrisCodes/favicon.ico">
-<link rel="apple-touch-icon" href="https://www.cjvillarreal.com/ChrisCodes/favicon.ico">
-<link rel="mask-icon" href="https://www.cjvillarreal.com/ChrisCodes/favicon.ico">
+<link rel="icon" href="http://localhost:1313/ChrisCodes/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/ChrisCodes/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/ChrisCodes/favicon.ico">
+<link rel="apple-touch-icon" href="http://localhost:1313/ChrisCodes/favicon.ico">
+<link rel="mask-icon" href="http://localhost:1313/ChrisCodes/favicon.ico">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://www.cjvillarreal.com/ChrisCodes/posts/sha/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/ChrisCodes/posts/sha/">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,75 +56,6 @@
 
     </style>
 </noscript>
-  
-
-<meta property="og:title" content="SHA, Secure Hash Algorithm 🔒" />
-<meta property="og:description" content="SHA, Secure Hash Algorithm" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.cjvillarreal.com/ChrisCodes/posts/sha/" />
-<meta property="og:image" content="https://www.cjvillarreal.com/ChrisCodes/images/sha.png" /><meta property="article:section" content="posts" />
-
-
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.cjvillarreal.com/ChrisCodes/images/sha.png" />
-<meta name="twitter:title" content="SHA, Secure Hash Algorithm 🔒"/>
-<meta name="twitter:description" content="SHA, Secure Hash Algorithm"/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://www.cjvillarreal.com/ChrisCodes/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "SHA, Secure Hash Algorithm 🔒",
-      "item": "https://www.cjvillarreal.com/ChrisCodes/posts/sha/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "SHA, Secure Hash Algorithm 🔒",
-  "name": "SHA, Secure Hash Algorithm 🔒",
-  "description": "SHA, Secure Hash Algorithm",
-  "keywords": [
-    
-  ],
-  "articleBody": "I’ve been thinking a lot about password security and data integrity lately. I remembered learning about hash functions and have used them in past roles for transferring files. I even thought using SHA-256 was standard practice in hashing passwords. This was until I Googled SHA (Secure Hash Algorithm) and learn something. Here’s what I found:\nFirst, what is a SHA (Secure Hash Algorithm)? A secure hash algorithm is a mathematical function that takes input and produces a fixed-size string of characters called a hash value or hash code. The hash value is then used to ensure data integrity and provide a way to identify data uniquely. But How?\nHow it works First, a user provides input data such as text or files they want to hash. The secure hash algorithm applies a series of mathematical operations (via a hash function) to the input data. These operations transform the data into a unique, fixed-length string of alphanumeric characters, regardless of the input’s size. Kind of like a fingerprint to identify the data with.\nWhy it’s cool A secure hash algorithm should produce a unique hash value for each unique input. Even a tiny change in the input data should result in a significantly different hash value. The process of creating a hash value is one directional, meaning it is not possible to derive the original input data from the hash value. Unlike encryption which can be decrypted.\nSecure hash algorithms, such as MD5 (Message Digest Algorithm 5), SHA-1 (Secure Hash Algorithm 1), and SHA-256 (Secure Hash Algorithm 256-bit), are commonly used in various applications, including data integrity checks, password storage, digital signatures, and data verification. They provide a way to verify the integrity and authenticity of data without revealing the original data itself.\nSHA Hash Generator Input text to generate a hash with MD5, SHA-1, and SHA-256.\nEnter Text: Generate Hash Demo: Password Verification When storing passwords, DO NOT store them in plain text. Instead, passwords are typically hashed using a secure hash function. When a user enters their password for authentication, it is hashed and compared against the hash stored in the database to validate their identity without exposing the actual password. Let's mock this out below: Input the same text you did above and see if it gives the correct signature. We're using the hash algorithm (SHA-256)to generate a 256-bit(32 byte) \"signature\" and checking if it matches the same signature you entered above. Note: If you refreshed the browser, generate a new hash. Enter Password: Verify SHA and password hashing SHA algorithms, such as SHA-256, were not designed specifically for password storage. While they are cryptographic hash functions and can be used for password hashing, they have limitations that make them less suitable for this purpose.\nHere are a few reasons why SHA alone is not considered secure for password storage:\nSpeed: SHA algorithms are designed to be fast and efficient, which is desirable for many use cases. However, this speed makes them vulnerable to brute-force and dictionary attacks. Attackers can quickly hash a large number of possible passwords and compare them to the stored hashes, potentially revealing the original passwords.\nLack of Salt: A salt is a random value added to the password before hashing, making each password hash unique. SHA algorithms do not inherently include a salt. Without a salt, attackers can use precomputed tables (rainbow tables) to expedite the process of cracking hashed passwords.\nLack of Iteration/Key Stretching: Iteration or key stretching is the process of applying the hash function multiple times, which significantly slows down the hashing process. This makes it more difficult and time-consuming for attackers to try different password combinations. SHA algorithms do not provide built-in support for iteration or key stretching.\nHow should we store passwords? It’s recommended to use specialized password hashing algorithms designed for secure password storage. Examples of such algorithms include bcrypt , scrypt, and Argon2. These algorithms incorporate features like salting, iteration, and a slower hashing process to make it more difficult and time-consuming for attackers to crack passwords.\nBy using a dedicated password hashing algorithm, you can enhance the security of password storage and protect against common password-related attacks. However, I think the best way to store passwords is not at all! Use something like Google sign-in. Maybe I’ll do a Google deep dive on that too.\n",
-  "wordCount" : "720",
-  "inLanguage": "en",
-  "image":"https://www.cjvillarreal.com/ChrisCodes/images/sha.png","datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
-  "author":{
-    "@type": "Person",
-    "name": "Chris"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.cjvillarreal.com/ChrisCodes/posts/sha/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "ChrisCodes",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.cjvillarreal.com/ChrisCodes/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
 
 <body class="" id="top">
@@ -142,7 +73,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.cjvillarreal.com/ChrisCodes/" accesskey="h" title="ChrisCodes (Alt + H)">ChrisCodes</a>
+            <a href="http://localhost:1313/ChrisCodes/" accesskey="h" title="ChrisCodes (Alt + H)">ChrisCodes</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -168,7 +99,7 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://www.cjvillarreal.com/ChrisCodes/tags/" title="tags">
+                <a href="http://localhost:1313/ChrisCodes/tags/" title="tags">
                     <span>tags</span>
                 </a>
             </li>
@@ -190,7 +121,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://www.cjvillarreal.com/ChrisCodes/">Home</a>&nbsp;»&nbsp;<a href="https://www.cjvillarreal.com/ChrisCodes/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/ChrisCodes/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/ChrisCodes/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       SHA, Secure Hash Algorithm 🔒
     </h1>
@@ -201,7 +132,7 @@
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="eager" src="https://www.cjvillarreal.com/ChrisCodes/images/sha.png" alt="Computer">
+<figure class="entry-cover"><img loading="eager" src="http://localhost:1313/ChrisCodes/images/sha.png" alt="Computer">
         <p><!-- raw HTML omitted -->
 </p>
 </figure>
@@ -383,12 +314,12 @@
     <ul class="post-tags">
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://www.cjvillarreal.com/ChrisCodes/posts/retrofilmdate/">
+  <a class="prev" href="http://localhost:1313/ChrisCodes/posts/retrofilmdate/">
     <span class="title">« Prev</span>
     <br>
     <span>Retro Film Date</span>
   </a>
-  <a class="next" href="https://www.cjvillarreal.com/ChrisCodes/posts/basic/">
+  <a class="next" href="http://localhost:1313/ChrisCodes/posts/basic/">
     <span class="title">Next »</span>
     <br>
     <span>Let’s try something BASIC.</span>
@@ -400,7 +331,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://www.cjvillarreal.com/ChrisCodes/">ChrisCodes</a></span> · 
+        <span>&copy; 2024 <a href="http://localhost:1313/ChrisCodes/">ChrisCodes</a></span> · 
 
     <span>
         Powered by

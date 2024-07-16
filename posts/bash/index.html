@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/ChrisCodes/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=ChrisCodes/livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Not to bash on Bash. | ChrisCodes</title>
 <meta name="keywords" content="bash, terminal">
 <meta name="description" content="Just because you can doesn&#39;t mean you should.">
 <meta name="author" content="Chris">
 <link rel="canonical" href="https://canonical.url/to/page">
 <link crossorigin="anonymous" href="/ChrisCodes/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/ChrisCodes/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/ChrisCodes/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/ChrisCodes/favicon.ico">
-<link rel="apple-touch-icon" href="http://localhost:1313/ChrisCodes/favicon.ico">
-<link rel="mask-icon" href="http://localhost:1313/ChrisCodes/favicon.ico">
+<link rel="icon" href="https://www.cjvillarreal.com/ChrisCodes/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.cjvillarreal.com/ChrisCodes/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.cjvillarreal.com/ChrisCodes/favicon.ico">
+<link rel="apple-touch-icon" href="https://www.cjvillarreal.com/ChrisCodes/favicon.ico">
+<link rel="mask-icon" href="https://www.cjvillarreal.com/ChrisCodes/favicon.ico">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/ChrisCodes/posts/bash/">
+<link rel="alternate" hreflang="en" href="https://www.cjvillarreal.com/ChrisCodes/posts/bash/">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,6 +56,75 @@
 
     </style>
 </noscript>
+  
+
+<meta property="og:title" content="Not to bash on Bash." />
+<meta property="og:description" content="Just because you can doesn&#39;t mean you should." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.cjvillarreal.com/ChrisCodes/posts/bash/" />
+<meta property="og:image" content="https://www.cjvillarreal.com/ChrisCodes/images/bash.PNG" /><meta property="article:section" content="posts" />
+
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.cjvillarreal.com/ChrisCodes/images/bash.PNG" />
+<meta name="twitter:title" content="Not to bash on Bash."/>
+<meta name="twitter:description" content="Just because you can doesn&#39;t mean you should."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://www.cjvillarreal.com/ChrisCodes/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Not to bash on Bash.",
+      "item": "https://www.cjvillarreal.com/ChrisCodes/posts/bash/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Not to bash on Bash.",
+  "name": "Not to bash on Bash.",
+  "description": "Just because you can doesn't mean you should.",
+  "keywords": [
+    "bash", "terminal"
+  ],
+  "articleBody": "My job out of college was working on the UCSC Genome Browser QA team. One of the first things I had to do was get comfortable with the Born again shell (bash). I found it really helpful to have a quiver of one-liners for repetitive tasks.\nFor example, I can create a dummy data file with 1000 lines:\nfor((i=1;i\u003c=1000; i++)); do echo \"data_point_$i\" \u003e\u003e data_munging.txt; done Let’s say I needed to add each entry in an SQL query (for some reason) I’d need to remove the new lines and add a comma as a separator with each data_point in single quotes. I wouldn’t want to do that manually!\necho $(sed \"$ ! s/.*/'\u0026',/; $ s/.*/'\u0026'/\" data_munging.txt) Aaaand we’re done. So fast.\nRecently, I had the idea to try a Leet Code problem with a bash script. There is really no reason to do this other than curiosity.\nLet’s try Two Sum. The problem is as follows: Given an array of integers (nums) and an integer target, return the indices of the two numbers such that they add up to the target. Assume each input has exactly one solution and you may not use the same element twice.\n#!/bin/bash nums=(1 22 4 8 10 32 40 3 100 1 89 3 9 0) target=6 for i in ${!nums[@]} do diff=$(($target - ${nums[$i]})) for j in ${!nums[@]} do if [[ \"${nums[j]}\" = \"$diff\" \u0026\u0026 $i != $j ]] then echo \"[$i,$j]\" break 2 fi done done I’ll break down the code below:\nnums=(1 22 4 8 10 32 40 3 100 1 89 3 9 0) target=6 Initialize an array, nums, and a variable, target.\nfor i in ${!nums[@]} This line begins a for loop that loops through the nums array’s indices.\ndiff=$(($target - ${nums[$i]})) Then we calculate the difference between the target and each element in the nums array.\nfor j in ${!nums[@]} Nested loop to go through the elements in nums.\nif [[ \"${nums[j]}\" = \"$diff\" \u0026\u0026 $i != $j ]] If the difference of target and index “i” is found in the array and the index that it’s found at is not the same as “i”, proceed.\necho \"[$i,$j]\" break 2 Output the indices found and break out of the nested loop.\n[7,11] It works! However, not to bash on Bash, that doesn’t mean you should do it.\n",
+  "wordCount" : "389",
+  "inLanguage": "en",
+  "image":"https://www.cjvillarreal.com/ChrisCodes/images/bash.PNG","datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Chris"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.cjvillarreal.com/ChrisCodes/posts/bash/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ChrisCodes",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.cjvillarreal.com/ChrisCodes/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -73,7 +142,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/ChrisCodes/" accesskey="h" title="ChrisCodes (Alt + H)">ChrisCodes</a>
+            <a href="https://www.cjvillarreal.com/ChrisCodes/" accesskey="h" title="ChrisCodes (Alt + H)">ChrisCodes</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -99,7 +168,7 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/ChrisCodes/tags/" title="tags">
+                <a href="https://www.cjvillarreal.com/ChrisCodes/tags/" title="tags">
                     <span>tags</span>
                 </a>
             </li>
@@ -121,7 +190,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/ChrisCodes/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/ChrisCodes/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://www.cjvillarreal.com/ChrisCodes/">Home</a>&nbsp;»&nbsp;<a href="https://www.cjvillarreal.com/ChrisCodes/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Not to bash on Bash.
     </h1>
@@ -132,7 +201,7 @@
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="eager" src="http://localhost:1313/ChrisCodes/images/bash.PNG" alt="">
+<figure class="entry-cover"><img loading="eager" src="https://www.cjvillarreal.com/ChrisCodes/images/bash.PNG" alt="">
         <p><!-- raw HTML omitted -->
 </p>
 </figure>
@@ -187,11 +256,11 @@ element twice.</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/ChrisCodes/tags/bash/">Bash</a></li>
-      <li><a href="http://localhost:1313/ChrisCodes/tags/terminal/">Terminal</a></li>
+      <li><a href="https://www.cjvillarreal.com/ChrisCodes/tags/bash/">Bash</a></li>
+      <li><a href="https://www.cjvillarreal.com/ChrisCodes/tags/terminal/">Terminal</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/ChrisCodes/posts/assembly_fun/">
+  <a class="prev" href="https://www.cjvillarreal.com/ChrisCodes/posts/assembly_fun/">
     <span class="title">« Prev</span>
     <br>
     <span>ASSEMBLY FUN 💾</span>
@@ -203,7 +272,7 @@ element twice.</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="http://localhost:1313/ChrisCodes/">ChrisCodes</a></span> · 
+        <span>&copy; 2024 <a href="https://www.cjvillarreal.com/ChrisCodes/">ChrisCodes</a></span> · 
 
     <span>
         Powered by

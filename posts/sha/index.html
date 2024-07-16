@@ -62,12 +62,12 @@
 <meta property="og:description" content="SHA, Secure Hash Algorithm" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.cjvillarreal.com/ChrisCodes/posts/sha/" />
-<meta property="og:image" content="https://www.cjvillarreal.com/ChrisCodes/images/sha.jpg" /><meta property="article:section" content="posts" />
+<meta property="og:image" content="https://www.cjvillarreal.com/ChrisCodes/images/sha.PNG" /><meta property="article:section" content="posts" />
 
 
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.cjvillarreal.com/ChrisCodes/images/sha.jpg" />
+<meta name="twitter:image" content="https://www.cjvillarreal.com/ChrisCodes/images/sha.PNG" />
 <meta name="twitter:title" content="SHA, Secure Hash Algorithm 🔒"/>
 <meta name="twitter:description" content="SHA, Secure Hash Algorithm"/>
 
@@ -105,7 +105,7 @@
   "articleBody": "I’ve been thinking a lot about password security and data integrity lately. I remembered learning about hash functions and have used them in past roles for transferring files. I even thought using SHA-256 was standard practice in hashing passwords. This was until I Googled SHA (Secure Hash Algorithm) and learn something. Here’s what I found:\nFirst, what is a SHA (Secure Hash Algorithm)? A secure hash algorithm is a mathematical function that takes input and produces a fixed-size string of characters called a hash value or hash code. The hash value is then used to ensure data integrity and provide a way to identify data uniquely. But How?\nHow it works First, a user provides input data such as text or files they want to hash. The secure hash algorithm applies a series of mathematical operations (via a hash function) to the input data. These operations transform the data into a unique, fixed-length string of alphanumeric characters, regardless of the input’s size. Kind of like a fingerprint to identify the data with.\nWhy it’s cool A secure hash algorithm should produce a unique hash value for each unique input. Even a tiny change in the input data should result in a significantly different hash value. The process of creating a hash value is one directional, meaning it is not possible to derive the original input data from the hash value. Unlike encryption which can be decrypted.\nSecure hash algorithms, such as MD5 (Message Digest Algorithm 5), SHA-1 (Secure Hash Algorithm 1), and SHA-256 (Secure Hash Algorithm 256-bit), are commonly used in various applications, including data integrity checks, password storage, digital signatures, and data verification. They provide a way to verify the integrity and authenticity of data without revealing the original data itself.\nSHA Hash Generator Input text to generate a hash with MD5, SHA-1, and SHA-256.\nEnter Text: Generate Hash Demo: Password Verification When storing passwords, DO NOT store them in plain text. Instead, passwords are typically hashed using a secure hash function. When a user enters their password for authentication, it is hashed and compared against the hash stored in the database to validate their identity without exposing the actual password. Let's mock this out below: Input the same text you did above and see if it gives the correct signature. We're using the hash algorithm (SHA-256)to generate a 256-bit(32 byte) \"signature\" and checking if it matches the same signature you entered above. Note: If you refreshed the browser, generate a new hash. Enter Password: Verify SHA and password hashing SHA algorithms, such as SHA-256, were not designed specifically for password storage. While they are cryptographic hash functions and can be used for password hashing, they have limitations that make them less suitable for this purpose.\nHere are a few reasons why SHA alone is not considered secure for password storage:\nSpeed: SHA algorithms are designed to be fast and efficient, which is desirable for many use cases. However, this speed makes them vulnerable to brute-force and dictionary attacks. Attackers can quickly hash a large number of possible passwords and compare them to the stored hashes, potentially revealing the original passwords.\nLack of Salt: A salt is a random value added to the password before hashing, making each password hash unique. SHA algorithms do not inherently include a salt. Without a salt, attackers can use precomputed tables (rainbow tables) to expedite the process of cracking hashed passwords.\nLack of Iteration/Key Stretching: Iteration or key stretching is the process of applying the hash function multiple times, which significantly slows down the hashing process. This makes it more difficult and time-consuming for attackers to try different password combinations. SHA algorithms do not provide built-in support for iteration or key stretching.\nHow should we store passwords? It’s recommended to use specialized password hashing algorithms designed for secure password storage. Examples of such algorithms include bcrypt , scrypt, and Argon2. These algorithms incorporate features like salting, iteration, and a slower hashing process to make it more difficult and time-consuming for attackers to crack passwords.\nBy using a dedicated password hashing algorithm, you can enhance the security of password storage and protect against common password-related attacks. However, I think the best way to store passwords is not at all! Use something like Google sign-in. Maybe I’ll do a Google deep dive on that too.\n",
   "wordCount" : "720",
   "inLanguage": "en",
-  "image":"https://www.cjvillarreal.com/ChrisCodes/images/sha.jpg","datePublished": "0001-01-01T00:00:00Z",
+  "image":"https://www.cjvillarreal.com/ChrisCodes/images/sha.PNG","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
   "author":{
     "@type": "Person",
@@ -201,6 +201,10 @@
 
 </div>
   </header> 
+<figure class="entry-cover"><img loading="eager" src="https://www.cjvillarreal.com/ChrisCodes/images/sha.PNG" alt="Computer">
+        <p><!-- raw HTML omitted -->
+</p>
+</figure>
   <div class="post-content"><p>I’ve been thinking a lot about password security and data integrity lately. I remembered learning about hash functions and have used them in past roles for transferring files. I even thought using SHA-256 was standard practice in hashing passwords. This was until I Googled SHA (Secure Hash Algorithm) and learn something. Here’s what I found:</p>
 <h2 id="first-what-is-a-sha-secure-hash-algorithm">First, what is a SHA (Secure Hash Algorithm)?<a hidden class="anchor" aria-hidden="true" href="#first-what-is-a-sha-secure-hash-algorithm">#</a></h2>
 <p>A secure hash algorithm is a mathematical function that takes input and produces a fixed-size string of characters called a hash value or hash code. The hash value is then used to ensure data integrity and provide a way to identify data uniquely. But How?</p>

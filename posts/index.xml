@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on ChrisCodes</title>
+    <title>Posts on CJVILLARREAL</title>
     <link>https://www.cjvillarreal.com/ChrisCodes/posts/</link>
-    <description>Recent content in Posts on ChrisCodes</description>
+    <description>Recent content in Posts on CJVILLARREAL</description>
     <generator>Hugo -- 0.128.2</generator>
     <language>en-us</language>
     <atom:link href="https://www.cjvillarreal.com/ChrisCodes/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>https://www.cjvillarreal.com/ChrisCodes/posts/aboutme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cjvillarreal.com/ChrisCodes/posts/aboutme/</guid>
+      <description>I’m a lifelong learner who gets bouts of creativity. I’ve found coding as one medium to express my ideas and explore; it’s always a challenge and I appreciate that.
+Professionally, I’ve been working as a Software Developer, and previously Tester, in the clinical genomics space at Invitae. Moreover, I’ve worked in QA on projects such as the UCSC Genome Browser, and as a Data Wrangler at the Human Cell Atlas and California Institutes of Health.</description>
+    </item>
     <item>
       <title>I Finished Harvard&#39;s CS50x (Computer Science Intro)</title>
       <link>https://www.cjvillarreal.com/ChrisCodes/posts/cs50/</link>
@@ -55,6 +63,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.cjvillarreal.com/ChrisCodes/posts/bash/</guid>
       <description>Just because you can doesn&amp;#39;t mean you should.</description>
+    </item>
+    <item>
+      <title>My first Post</title>
+      <link>https://www.cjvillarreal.com/ChrisCodes/posts/first_post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cjvillarreal.com/ChrisCodes/posts/first_post/</guid>
+      <description>This is my first post.</description>
     </item>
   </channel>
 </rss>

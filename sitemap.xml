@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.cjvillarreal.com/ChrisCodes/posts/aboutme/</loc>
+  </url><url>
     <loc>https://www.cjvillarreal.com/ChrisCodes/posts/cs50/</loc>
   </url><url>
     <loc>https://www.cjvillarreal.com/ChrisCodes/posts/retrofilmdate/</loc>
@@ -37,6 +39,8 @@
     <loc>https://www.cjvillarreal.com/ChrisCodes/tags/cs50/</loc>
   </url><url>
     <loc>https://www.cjvillarreal.com/ChrisCodes/tags/cs50x/</loc>
+  </url><url>
+    <loc>https://www.cjvillarreal.com/ChrisCodes/posts/first_post/</loc>
   </url><url>
     <loc>https://www.cjvillarreal.com/ChrisCodes/posts/</loc>
   </url><url>

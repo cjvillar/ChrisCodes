@@ -8,14 +8,6 @@
     <language>en-us</language>
     <atom:link href="https://www.cjvillarreal.com/ChrisCodes/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About Me</title>
-      <link>https://www.cjvillarreal.com/ChrisCodes/posts/aboutme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.cjvillarreal.com/ChrisCodes/posts/aboutme/</guid>
-      <description>I’m a lifelong learner who gets bouts of creativity. I’ve found coding as one medium to express my ideas and explore; it’s always a challenge and I appreciate that.
-Professionally, I’ve been working as a Software Developer, and previously Tester, in the clinical genomics space at Invitae. Moreover, I’ve worked in QA on projects such as the UCSC Genome Browser, and as a Data Wrangler at the Human Cell Atlas and California Institutes of Health.</description>
-    </item>
-    <item>
       <title>I Finished Harvard&#39;s CS50x (Computer Science Intro)</title>
       <link>https://www.cjvillarreal.com/ChrisCodes/posts/cs50/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -58,18 +50,19 @@ Professionally, I’ve been working as a Software Developer, and previously Test
       <description>Assembly is fun and cool.</description>
     </item>
     <item>
+      <title>About Me</title>
+      <link>https://www.cjvillarreal.com/ChrisCodes/posts/aboutme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cjvillarreal.com/ChrisCodes/posts/aboutme/</guid>
+      <description>Software Developer / Software Quality Assurance
+As a Software Developer/Tester with over 6 years of experience in commercial settings and academia, I have successfully contributed to the quality assurance and software development efforts across various cross-functional teams. My expertise lies in supporting Engineering teams, ensuring top-notch quality and adherence to industry standards. With a strong background in QA methodologies, I am adept at driving effective testing processes and collaborating with diverse stakeholders to deliver high-quality software products.</description>
+    </item>
+    <item>
       <title>Not to bash on Bash.</title>
       <link>https://www.cjvillarreal.com/ChrisCodes/posts/bash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.cjvillarreal.com/ChrisCodes/posts/bash/</guid>
       <description>Just because you can doesn&amp;#39;t mean you should.</description>
-    </item>
-    <item>
-      <title>My first Post</title>
-      <link>https://www.cjvillarreal.com/ChrisCodes/posts/first_post/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.cjvillarreal.com/ChrisCodes/posts/first_post/</guid>
-      <description>This is my first post.</description>
     </item>
   </channel>
 </rss>

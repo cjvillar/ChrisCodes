@@ -87,11 +87,7 @@
 
 <body class="list" id="top">
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -102,26 +98,6 @@
         <div class="logo">
             <a href="https://www.cjvillarreal.com/ChrisCodes/" accesskey="h" title="CJVILLARREAL (Alt + H)">CJVILLARREAL</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
             </div>
         </div>
         <ul id="menu">
@@ -142,21 +118,62 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">I Finished Harvard&#39;s CS50x (Computer Science Intro)
+    <h2 class="entry-hint-parent">C to Python
     </h2>
   </header>
   <div class="entry-content">
-    <p>CS50x stands as a renowned computer science course offered by Harvard University, and it’s available for free on edX. Officially named “CS50’s Introduction to Computer Science,” this course aims to offer a comprehensive introduction to the world of computer science. It caters to both newcomers without prior programming experience and those who have some background in the field. As someone who’s always eager to learn, I’ve had this course on my to-do list since 2017....</p>
+    <p>The Harvard CS50x course is really interesting. One assignment is to create a program in C that prompts the user for a message and then outputs the text in binary with dark and light emojis representing 0 and 1, respectively. It’s fun to play around and create different “messages”. I wanted to translate my solution code from C to python, so thats what I did here.
+The CS50 course provides a C library, CS50, which includes some types that aren’t native to C, like string and get_string()....</p>
   </div>
-  <footer class="entry-footer">2 min&nbsp;·&nbsp;346 words&nbsp;·&nbsp;Chris</footer>
-  <a class="entry-link" aria-label="post link to I Finished Harvard&#39;s CS50x (Computer Science Intro)" href="https://www.cjvillarreal.com/ChrisCodes/posts/cs50/"></a>
+  <footer class="entry-footer">3 min&nbsp;·&nbsp;571 words&nbsp;·&nbsp;Chris</footer>
+  <a class="entry-link" aria-label="post link to C to Python" href="https://www.cjvillarreal.com/ChrisCodes/posts/cs50_arrays/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">ASSEMBLY FUN 💾
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>After spending some time programming in C I wanted to explore the world of assembly. Naturally, I went to YouTube and searched for assembly code. I found some excellent resources like, Fireship’s Assembly Language in 100 Seconds.
+I decided to install Netwide Assembler (NASM), an assembler for the x86 CPU architecture. I’m on a mac with an intel chip. To install the assembler I used HomeBrew:
+brew install nasm
+Below is the code for hello world....</p>
+  </div>
+  <footer class="entry-footer">1 min&nbsp;·&nbsp;175 words&nbsp;·&nbsp;Chris</footer>
+  <a class="entry-link" aria-label="post link to ASSEMBLY FUN 💾" href="https://www.cjvillarreal.com/ChrisCodes/posts/assembly_fun/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">About Me
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Software Developer / Software Quality Assurance
+As a Software Developer/Tester with over 6 years of experience in commercial settings and academia, I have successfully contributed to the quality assurance and software development efforts across various cross-functional teams. My expertise lies in supporting Engineering teams, ensuring top-notch quality and adherence to industry standards. With a strong background in QA methodologies, I am adept at driving effective testing processes and collaborating with diverse stakeholders to deliver high-quality software products....</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to About Me" href="https://www.cjvillarreal.com/ChrisCodes/posts/aboutme/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Not to bash on Bash.
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>My job out of college was working on the UCSC Genome Browser QA team. One of the first things I had to do was get comfortable with the Born again shell (bash). I found it really helpful to have a quiver of one-liners for repetitive tasks.
+For example, I can create a dummy data file with 1000 lines:
+for((i=1;i&lt;=1000; i&#43;&#43;)); do echo &#34;data_point_$i&#34; &gt;&gt; data_munging.txt; done Let’s say I needed to add each entry in an SQL query (for some reason) I’d need to remove the new lines and add a comma as a separator with each data_point in single quotes....</p>
+  </div>
+  <footer class="entry-footer">2 min&nbsp;·&nbsp;389 words&nbsp;·&nbsp;Chris</footer>
+  <a class="entry-link" aria-label="post link to Not to bash on Bash." href="https://www.cjvillarreal.com/ChrisCodes/posts/bash/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://www.cjvillarreal.com/ChrisCodes/posts/">
       «&nbsp;Prev&nbsp;
-    </a>
-    <a class="next" href="https://www.cjvillarreal.com/ChrisCodes/posts/page/3/">Next&nbsp;&nbsp;»
     </a>
   </nav>
 </footer>
@@ -217,18 +234,6 @@
             mybutton.style.opacity = "0";
         }
     };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
 
 </script>
 </body>
